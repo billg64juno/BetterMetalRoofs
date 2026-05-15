@@ -30,10 +30,12 @@ collections:
           - {label: "Main Featured Image", name: "ice_img", widget: "image"}
 
       - file: "faq.html"
-        label: "FAQ Slideshow"
+        label: "FAQ & Projects"
         name: "faq"
         format: "frontmatter-html"
         fields:
-          - {label: "Slide 1", name: "slide1", widget: "image"}
-          - {label: "Slide 2", name: "slide2", widget: "image"}
-          - {label: "Slide 3", name: "slide3", widget: "image"}
+          - {label: "Slideshow Image 1", name: "slide1", widget: "image"}
+          - {label: "Slideshow Image 2", name: "slide2", widget: "image"}
+          - {label: "Slideshow Image 3", name: "slide3", widget: "image"}
+          # ADDED THIS LINE BELOW
+          - {label: "Durability Section Image", name: "faq_pic", widget: "image"}
