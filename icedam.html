@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="description" content="Better Metal Roofs offers premium metal roofing installation and ice dam prevention in Ware, MA, and across New England. 50+ years of durability guaranteed.">
+<meta name="keywords" content="metal roofing Ware MA, New England roofing contractors, ice dam prevention, heated roof systems, standing seam metal roof">
+<meta name="author" content="Better Metal Roofs">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bettermetalroofs.com/">
+<meta property="og:title" content="Better Metal Roofs | Premium Roofing & Ice Dam Prevention">
+<meta property="og:description" content="Expert metal roof installation with 20+ years of experience. Protecting New England homes from the harshest winters.">
+<meta property="og:image" content="IMG_1274.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Dam Prevention | Better Metal Roofs</title>
+
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .nav-logo { font-family: 'Oswald', sans-serif; }
+        .bg-yellow { background-color: #f2c144; }
+        .text-yellow { color: #f2c144; }
+        .tilt-card { transform: rotate(3deg); }
+    </style>
+</head>
+<body class="bg-white text-black antialiased">
+
+<header class="flex justify-between items-center px-6 py-4 sticky top-0 bg-white z-50 border-b border-gray-100">
+    <div class="flex items-center gap-2">
+        <div class="w-10 h-10 bg-black flex items-center justify-center">
+            <span class="text-[#f2c144] font-black text-xs text-center">BMR</span>
+        </div>
+        <span class="nav-logo uppercase font-bold text-xl tracking-tighter">Better Metal Roofs</span>
+    </div>
+
+    <div class="hidden md:flex items-center gap-8">
+        <a href="faq.html" class="uppercase font-bold text-[10px] tracking-widest hover:text-yellow transition-colors">FAQS</a>
+        <a href="index.html" class="uppercase font-bold text-[10px] tracking-widest hover:text-yellow transition-colors">Home</a>
+        <a href="getaquote.html" class="bg-yellow text-black px-5 py-2 font-bold text-[10px] uppercase tracking-wider hover:bg-black hover:text-white transition-colors">Get a Quote</a>
+    </div>
+
+    <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 z-50">
+        <span class="w-6 h-0.5 bg-black transition-all duration-300"></span>
+        <span class="w-6 h-0.5 bg-black transition-all duration-300"></span>
+        <span class="w-6 h-0.5 bg-black transition-all duration-300"></span>
+    </button>
+</header>
+
+<div id="mobile-menu" class="fixed inset-0 bg-white z-40 flex flex-col items-center justify-center gap-8 transition-transform duration-500 translate-x-full md:hidden">
+    <a href="faq.html" class="nav-logo text-3xl uppercase font-bold hover:text-yellow">FAQS</a>
+    <a href="index.html" class="nav-logo text-3xl uppercase font-bold hover:text-yellow">Home</a>
+    <a href="getaquote.html" class="nav-logo text-3xl uppercase font-bold text-yellow hover:text-black">Get a Quote</a>
+</div>
+
+<script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const spans = btn.querySelectorAll('span');
+
+    btn.addEventListener('click', () => {
+        menu.classList.toggle('translate-x-full');
+        spans[0].classList.toggle('rotate-45');
+        spans[0].classList.toggle('translate-y-2');
+        spans[1].classList.toggle('opacity-0');
+        spans[2].classList.toggle('-rotate-45');
+        spans[2].classList.toggle('-translate-y-2');
+        document.body.classList.toggle('overflow-hidden');
+    });
+</script>
+
+<main class="py-12 md:py-20 px-6">
+    <div class="text-center mb-10 md:mb-16">
+        <h3 class="text-xl md:text-2xl font-bold uppercase tracking-tight">Ice Dam Prevention</h3>
+    </div>
+
+    <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
+        
+        <div class="relative flex flex-col sm:flex-row items-center justify-center lg:justify-end gap-6">
+            <div class="text-center sm:text-right">
+                <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black uppercase leading-[0.85]">
+                    Prevent<br>Ice Dams<br>With<br><span class="text-yellow">Heated</span><br>Roof<br>Systems
+                </h1>
+            </div>
+            
+            <div class="relative w-full max-w-[200px] sm:max-w-[240px] aspect-[4/5] bg-white p-2 shadow-2xl tilt-card border border-gray-100 flex-shrink-0">
+                <img src="{{ice_img}}" 
+                     alt="Heated Roof Installation" 
+                     class="w-full h-full object-cover">
+            </div>
+        </div>
+
+        <div class="max-w-md mx-auto lg:mx-0 text-center lg:text-left">
+            <p class="text-gray-600 leading-relaxed mb-8 text-sm md:text-base font-medium">
+                Stop climbing ladders to chip away at dangerous ice. Our heated roof systems offer a permanent, "set-it-and-forget-it" solution to ice damming. By creating clear drainage paths for meltwater, our technology ensures your home stays dry and your gutters remain functional all winter long.
+            </p>
+            <a href="https://heatedroofsystems.com" target="_blank" class="inline-block text-sm font-black uppercase tracking-widest border-b-2 border-yellow pb-1 hover:text-yellow transition-all">
+                Read more →
+            </a>
+        </div>
+    </div>
+</main>
+
+    <section class="py-24 bg-zinc-900 text-white mt-20">
+        <div class="max-w-6xl mx-auto px-8 grid md:grid-cols-3 gap-12">
+            <div>
+                <h4 class="text-yellow font-bold uppercase text-xs mb-4 tracking-widest">Self-Regulating</h4>
+                <p class="text-zinc-400 text-xs leading-relaxed">Energy-efficient cables that adjust heat output based on the ambient temperature.</p>
+            </div>
+            <div>
+                <h4 class="text-yellow font-bold uppercase text-xs mb-4 tracking-widest">Discreet Design</h4>
+                <p class="text-zinc-400 text-xs leading-relaxed">Low-profile panels that blend seamlessly with your metal roof’s aesthetic.</p>
+            </div>
+            <div>
+                <h4 class="text-yellow font-bold uppercase text-xs mb-4 tracking-widest">East Coast Experts</h4>
+                <p class="text-zinc-400 text-xs leading-relaxed">Locally installed and tested for the harshest New England winters.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white py-12 px-8 text-center">
+        <p class="text-[9px] tracking-[0.5em] uppercase font-black opacity-30">© 2026 BETTER METAL ROOFS. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="description" content="Better Metal Roofs offers premium metal roofing installation and ice dam prevention in Ware, MA, and across New England. 50+ years of durability guaranteed.">
+<meta name="keywords" content="metal roofing Ware MA, New England roofing contractors, ice dam prevention, heated roof systems, standing seam metal roof">
+<meta name="author" content="Better Metal Roofs">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bettermetalroofs.com/">
+<meta property="og:title" content="Better Metal Roofs | Premium Roofing & Ice Dam Prevention">
+<meta property="og:description" content="Expert metal roof installation with 20+ years of experience. Protecting New England homes from the harshest winters.">
+<meta property="og:image" content="IMG_1274.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Metal Roofing FAQ & Projects | Better Metal Roofs Ware, MA</title>
+
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, .nav-logo { font-family: 'Oswald', sans-serif; letter-spacing: -0.02em; }
+        .bg-yellow { background-color: #f2c144; }
+        .text-yellow { color: #f2c144; }
+        
+        /* Smooth Fade Slideshow Animation */
+        @keyframes fade {
+            0%, 100% { opacity: 0; transform: scale(1.05); }
+            15%, 85% { opacity: 1; transform: scale(1); }
+        }
+        .slideshow-img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            animation: fade 18s infinite;
+        }
+        .slideshow-img:nth-child(2) { animation-delay: 6s; }
+        .slideshow-img:nth-child(3) { animation-delay: 12s; }
+    </style>
+</head>
+<body class="bg-white text-zinc-900 antialiased">
+
+<header class="flex justify-between items-center px-6 py-4 sticky top-0 bg-white z-50 border-b border-gray-100">
+    <div class="flex items-center gap-2">
+        <div class="w-10 h-10 bg-black flex items-center justify-center">
+            <span class="text-[#f2c144] font-black text-xs text-center">BMR</span>
+        </div>
+        <span class="nav-logo uppercase font-bold text-xl tracking-tighter">Better Metal Roofs</span>
+    </div>
+
+    <div class="hidden md:flex items-center gap-8">
+        <a href="icedam.html" class="uppercase font-bold text-[10px] tracking-widest hover:text-yellow transition-colors">Ice Dam Prevention</a>
+        <a href="index.html" class="uppercase font-bold text-[10px] tracking-widest hover:text-yellow transition-colors">Home</a>
+        <a href="getaquote.html" class="bg-yellow text-black px-5 py-2 font-bold text-[10px] uppercase tracking-wider hover:bg-black hover:text-white transition-colors">Get a Quote</a>
+    </div>
+
+    <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 z-50">
+        <span class="w-6 h-0.5 bg-black transition-all duration-300"></span>
+        <span class="w-6 h-0.5 bg-black transition-all duration-300"></span>
+        <span class="w-6 h-0.5 bg-black transition-all duration-300"></span>
+    </button>
+</header>
+
+<div id="mobile-menu" class="fixed inset-0 bg-white z-40 flex flex-col items-center justify-center gap-8 transition-transform duration-500 translate-x-full md:hidden">
+    <a href="icedam.html" class="nav-logo text-3xl uppercase font-bold hover:text-yellow">Ice Dam Prevention</a>
+    <a href="index.html" class="nav-logo text-3xl uppercase font-bold hover:text-yellow">Home</a>
+    <a href="getaquote.html" class="nav-logo text-3xl uppercase font-bold text-yellow hover:text-black">Get a Quote</a>
+</div>
+
+<script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const spans = btn.querySelectorAll('span');
+
+    btn.addEventListener('click', () => {
+        menu.classList.toggle('translate-x-full');
+        spans[0].classList.toggle('rotate-45');
+        spans[0].classList.toggle('translate-y-2');
+        spans[1].classList.toggle('opacity-0');
+        spans[2].classList.toggle('-rotate-45');
+        spans[2].classList.toggle('-translate-y-2');
+        document.body.classList.toggle('overflow-hidden');
+    });
+</script>
+
+    <section class="relative h-[70vh] bg-zinc-900 overflow-hidden flex items-center justify-center text-center">
+        <div class="absolute inset-0 z-0">
+            <img src="{{slide1}}" class="slideshow-img" alt="Project 1">
+            <img src="{{slide2}}" class="slideshow-img" alt="Project 2">
+            <img src="{{slide3}}" class="slideshow-img" alt="Project 3">
+        </div>
+        <div class="absolute inset-0 bg-zinc-900/40 z-10"></div>
+        <div class="relative z-20 px-6">
+            <h1 class="text-white text-7xl md:text-9xl font-black uppercase tracking-tighter drop-shadow-2xl">
+                Our <span class="text-yellow">Projects</span>
+            </h1>
+        </div>
+    </section>
+
+    <section class="py-32 bg-white px-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-24">
+                <h2 class="text-6xl font-black uppercase leading-none mb-6">Trusted Metal Roofing Experts</h2>
+                <p class="text-zinc-400 text-lg font-light italic">The reason why you can expect excellence when working with Better Metal Roofs</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-20 text-center">
+                <div class="group">
+                    <span class="text-7xl font-light text-blue-600 block mb-6">20+</span>
+                    <h4 class="font-bold uppercase text-sm tracking-widest mb-6">Years of Experience</h4>
+                    <p class="text-zinc-500 text-xs leading-loose px-4">Our seasoned team of roofing specialists has navigated decades of industry evolution, ensuring every project benefits from time-tested techniques and expert craftsmanship.</p>
+                </div>
+                <div class="group">
+                    <span class="text-7xl font-light text-blue-600 block mb-6">100+</span>
+                    <h4 class="font-bold uppercase text-sm tracking-widest mb-6">Roofs Installed</h4>
+                    <p class="text-zinc-500 text-xs leading-loose px-4">From residential homes to complex commercial structures, we've successfully protected over a hundred properties with precision engineering and high-quality materials.</p>
+                </div>
+                <div class="group">
+                    <span class="text-7xl font-light text-blue-600 block mb-6">50+</span>
+                    <h4 class="font-bold uppercase text-sm tracking-widest mb-6">Years of Durability</h4>
+                    <p class="text-zinc-500 text-xs leading-loose px-4">We don't just build for today. Our premium metal roofing systems are designed to withstand the harshest elements, offering a lifetime of security and peace of mind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 bg-zinc-50 px-10">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-16 items-center">
+            <div class="lg:col-span-5">
+                <h3 class="text-4xl font-black uppercase leading-tight mb-8">Protect your home with durability that lasts a lifetime.</h3>
+                <p class="text-zinc-500 text-sm mb-12 leading-loose">We provide expert installation and high-quality materials to ensure your roof stands the test of time and weather.</p>
+                
+                <div class="grid grid-cols-2 gap-12">
+                    <div>
+                        <h4 class="font-bold uppercase text-xs tracking-widest mb-4">Installation & Maintenance</h4>
+                        <p class="text-zinc-400 text-[11px] leading-loose">Our team specializes in precision installation, ensuring every seam is watertight and perfectly aligned. From inspection to walkthrough, we prioritize structural integrity.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold uppercase text-xs tracking-widest mb-4">Premium Materials</h4>
+                        <p class="text-zinc-400 text-[11px] leading-loose">We use industry-leading steel and aluminum alloys designed to resist corrosion, wind, and fire. Reflecting solar heat keeps your cooling costs low.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7 relative">
+                <img src="{{faq_pic}}" class="w-full grayscale hover:grayscale-0 transition-all duration-1000 shadow-2xl" alt="Roof Work">
+                <div class="absolute -bottom-10 -left-10 bg-zinc-900 text-white p-12 shadow-2xl border-l-8 border-yellow hidden md:block">
+                    <h4 class="text-yellow uppercase font-bold text-xs mb-8 tracking-[0.3em]">Top Features</h4>
+                    <ul class="space-y-6 text-xl font-bold uppercase tracking-tighter">
+                        <li>✓ Standing Seam Panels</li>
+                        <li>✓ Lifetime Durability</li>
+                        <li>✓ Weather-Resistant Coating</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 bg-zinc-900 text-white px-10">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-6xl md:text-8xl font-black uppercase leading-none mb-24 border-b border-zinc-800 pb-12">Frequently Asked Questions</h2>
+            
+            <div class="grid md:grid-cols-2 gap-x-24 gap-y-20">
+                <div class="space-y-6">
+                    <h4 class="font-bold uppercase text-lg tracking-tight">Is a metal roof noisier when it rains?</h4>
+                    <p class="text-zinc-400 text-sm leading-loose font-light">
+                        This is a common myth! When installed over <span class="text-white font-bold">solid sheathing</span> and proper insulation, a metal roof is no louder than any other roofing type. In many cases, the attic space and insulation dampen the sound so effectively you won't notice a difference.
+                    </p>
+                </div>
+                <div class="space-y-6">
+                    <h4 class="font-bold uppercase text-lg tracking-tight">How long can I expect a metal roof to last?</h4>
+                    <p class="text-zinc-400 text-sm leading-loose font-light">
+                        One of the biggest draws of metal is its longevity. While traditional asphalt shingles typically last 15 to 20 years, a professionally installed metal roof can easily last <span class="text-yellow font-black">50+ years</span>, your metal roof will probably outlive you.
+                    </p>
+                </div>
+                <div class="space-y-6 pt-10 border-t border-zinc-800">
+                    <h4 class="font-bold uppercase text-lg tracking-tight">Can I install a metal roof if I live on the coast?</h4>
+                    <p class="text-zinc-400 text-sm leading-loose font-light">
+                        Absolutely, but material choice is key. If you are within a few miles of the ocean, you should opt for <span class="text-white font-black underline decoration-yellow decoration-2">ALUMINUM</span> or <span class="text-white font-black underline decoration-yellow decoration-2">COPPER</span> rather than galvanized steel. Aluminum is naturally resistant to salt spray corrosion, ensuring your roof doesn't rust in the salty sea air.
+                    </p>
+                </div>
+                <div class="space-y-6 pt-10 border-t border-zinc-800">
+                    <h4 class="font-bold uppercase text-lg tracking-tight">How does the cost compare to traditional shingles?</h4>
+                    <p class="text-zinc-400 text-sm leading-loose font-light">
+                        The upfront cost of metal is generally <span class="text-white font-black">2 to 3 times higher</span> than asphalt shingles. However, because you likely won't have to replace it for the rest of your life—and because it can lower cooling costs by reflecting solar heat—it often proves to be the more economical choice over the long term.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white py-20 px-10 text-center">
+        <p class="text-[10px] tracking-[0.6em] uppercase font-black opacity-20">© 2026 BETTER METAL ROOFS | WARE, MA</p>
+    </footer>
+
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+</body>
+</html>

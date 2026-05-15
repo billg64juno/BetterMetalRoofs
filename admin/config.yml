@@ -1,0 +1,36 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "images"
+
+collections:
+  - name: "pages"
+    label: "Website Images"
+    files:
+      - file: "index.html"
+        label: "Home Page Images"
+        name: "index"
+        fields:
+          - {label: "Hero Background Image", name: "hero_img", widget: "image"}
+          - {label: "Why Metal Image", name: "why_img", widget: "image"}
+          - {label: "Feature 1 (Large)", name: "pic3", widget: "image"}
+          - {label: "Feature 2", name: "pic4", widget: "image"}
+          - {label: "Feature 3", name: "pic5", widget: "image"}
+          - {label: "Feature 4", name: "pic6", widget: "image"}
+          - {label: "Feature 5", name: "pic7", widget: "image"}
+
+      - file: "icedam.html"
+        label: "Ice Dam Images"
+        name: "icedam"
+        fields:
+          - {label: "Main Featured Image", name: "ice_img", widget: "image"}
+
+      - file: "faq.html"
+        label: "FAQ Slideshow"
+        name: "faq"
+        fields:
+          - {label: "Slide 1", name: "slide1", widget: "image"}
+          - {label: "Slide 2", name: "slide2", widget: "image"}
+          - {label: "Slide 3", name: "slide3", widget: "image"}
