@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // 1. Grab the raw text at the very top of the page
+    const bodyText = document.body.firstChild.textContent;
+    
+    // 2. Look for the data between the --- lines
+    if (bodyText.includes('---')) {
+      const yamlPart = bodyText.split('---')[1];
+      const lines = yamlPart.split('\n');
+      
+      lines.forEach(line => {
+        if (line.includes(':')) {
+          const [key, value] = line.split(':').map(s => s.trim());
+          if (key && value) {
+            // 3. Find every tag like {{key}} and replace it with the real image path
+            const placeholder = `{{${key}}}`;
+            document.body.innerHTML = document.body.innerHTML.replace(new RegExp(placeholder, 'g'), value);
+          }
+        }
+      });
+      
+      // 4. Hide that ugly text block from the top of the screen
+      document.body.firstChild.textContent = '';
+    }
+  });
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metal Roofing Services Ware, MA | Better Metal Roofs</title>
