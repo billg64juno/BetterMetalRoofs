@@ -12,6 +12,7 @@ collections:
       - file: "index.html"
         label: "Home Page Images"
         name: "index"
+        format: "frontmatter-html"
         fields:
           - {label: "Hero Background Image", name: "hero_img", widget: "image"}
           - {label: "Why Metal Image", name: "why_img", widget: "image"}
@@ -24,12 +25,14 @@ collections:
       - file: "icedam.html"
         label: "Ice Dam Images"
         name: "icedam"
+        format: "frontmatter-html"
         fields:
           - {label: "Main Featured Image", name: "ice_img", widget: "image"}
 
       - file: "faq.html"
         label: "FAQ Slideshow"
         name: "faq"
+        format: "frontmatter-html"
         fields:
           - {label: "Slide 1", name: "slide1", widget: "image"}
           - {label: "Slide 2", name: "slide2", widget: "image"}
