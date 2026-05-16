@@ -11,31 +11,52 @@ pic7: images/pic7.jpg
 <html lang="en">
 <head>
     <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    // 1. Grab the raw text at the very top of the page
-    const bodyText = document.body.firstChild.textContent;
-    
-    // 2. Look for the data between the --- lines
-    if (bodyText.includes('---')) {
-      const yamlPart = bodyText.split('---')[1];
-      const lines = yamlPart.split('\n');
-      
-      lines.forEach(line => {
-        if (line.includes(':')) {
-          const [key, value] = line.split(':').map(s => s.trim());
-          if (key && value) {
-            // 3. Find every tag like {{key}} and replace it with the real image path
-            const placeholder = `{{${key}}}`;
-            document.body.innerHTML = document.body.innerHTML.replace(new RegExp(placeholder, 'g'), value);
-          }
+      document.addEventListener("DOMContentLoaded", function() {
+        // 1. Grab the raw text at the very top of the page
+        const bodyText = document.body.firstChild.textContent;
+        
+        // 2. Look for the data between the --- lines
+        if (bodyText && bodyText.includes('---')) {
+          const yamlPart = bodyText.split('---')[1];
+          const lines = yamlPart.split('\n');
+          
+          // Work on a temporary HTML string to preserve event listeners
+          let currentHTML = document.body.innerHTML;
+          
+          lines.forEach(line => {
+            if (line.includes(':')) {
+              const [key, value] = line.split(':').map(s => s.trim());
+              if (key && value) {
+                // 3. Find every tag like {{key}} and replace it with the real image path
+                const placeholder = `{{${key}}}`;
+                currentHTML = currentHTML.replace(new RegExp(placeholder, 'g'), value);
+              }
+            }
+          });
+          
+          // Apply the updates ONCE before we bind standard interactive actions
+          document.body.innerHTML = currentHTML;
+          
+          // 4. Hide that ugly text block from the top of the screen
+          document.body.firstChild.textContent = '';
         }
+
+        // --- MOBILE MENU SCRIPT (Moved inside to ensure elements and innerHTML are settled) ---
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const spans = btn.querySelectorAll('span');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('translate-x-full');
+            spans[0].classList.toggle('rotate-45');
+            spans[0].classList.toggle('translate-y-2');
+            spans[1].classList.toggle('opacity-0');
+            spans[2].classList.toggle('-rotate-45');
+            spans[2].classList.toggle('-translate-y-2');
+            document.body.classList.toggle('overflow-hidden');
+        });
       });
-      
-      // 4. Hide that ugly text block from the top of the screen
-      document.body.firstChild.textContent = '';
-    }
-  });
-</script>
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metal Roofing Services Ware, MA | Better Metal Roofs</title>
@@ -109,22 +130,6 @@ pic7: images/pic7.jpg
     <a href="faq.html" class="nav-logo text-3xl uppercase font-bold hover:text-yellow">FAQS</a>
     <a href="getaquote.html" class="nav-logo text-3xl uppercase font-bold text-yellow hover:text-black">Get a Quote</a>
 </div>
-
-<script>
-    const btn = document.getElementById('menu-btn');
-    const menu = document.getElementById('mobile-menu');
-    const spans = btn.querySelectorAll('span');
-
-    btn.addEventListener('click', () => {
-        menu.classList.toggle('translate-x-full');
-        spans[0].classList.toggle('rotate-45');
-        spans[0].classList.toggle('translate-y-2');
-        spans[1].classList.toggle('opacity-0');
-        spans[2].classList.toggle('-rotate-45');
-        spans[2].classList.toggle('-translate-y-2');
-        document.body.classList.toggle('overflow-hidden');
-    });
-</script>
 
     <section class="relative h-[650px] flex items-center overflow-hidden">
         <div class="absolute inset-0 bg-black">
